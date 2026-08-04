@@ -1,0 +1,43 @@
+[package]
+name = "ohm_player"
+version = "0.3.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+# UI: default features enable the winit backend + FemtoVG (GPU) renderer.
+# "renderer-software" adds a pure-CPU renderer so the app also runs inside
+# VMs without OpenGL (select it with SLINT_BACKEND=winit-software).
+slint = { version = "1.8", features = ["renderer-software"] }
+
+# Audio playback engine (decoding + output sink).
+rodio = "0.19"
+
+# Embedded SQLite ("bundled" compiles SQLite from source, no system dependency).
+rusqlite = { version = "0.32", features = ["bundled"] }
+
+# Native file dialogs.
+rfd = "0.15"
+
+# ID3 metadata + embedded album art extraction.
+id3 = "1.14"
+
+# Shuffle logic.
+rand = "0.8"
+
+# Decodes embedded album-art bytes (JPEG/PNG) into RGBA for Slint.
+image = "0.25"
+
+# Accurate duration for MP3 files (rodio's decoder often can't report it).
+mp3-duration = "0.1"
+
+[build-dependencies]
+slint-build = "1.8"
+
+# Small and fast release binary (low memory footprint).
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
