@@ -51,6 +51,8 @@ No Windows, você também pode usar o script incluso:
 
 Ou dar duplo clique em `Ohm Player.cmd`.
 
+Se você baixar apenas o `.cmd`, ele baixa a última release automaticamente.
+
 ## Download e execução em 2 cliques
 
 O projeto agora está preparado para gerar pacotes por sistema operacional via GitHub Actions:
