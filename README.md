@@ -55,13 +55,11 @@ Se você baixar apenas o `.cmd`, ele baixa a última release automaticamente.
 
 ## Download e execução em 2 cliques
 
-O projeto agora está preparado para gerar pacotes por sistema operacional via GitHub Actions:
+O download pronto atualmente é o pacote Windows:
 
-- **Windows:** `.zip` versionado com `ohm_player.exe`, `Ohm Player.cmd` e `Logo.jpg`
-- **Linux:** `AppImage` versionado com ícone gerado a partir do `Logo.jpg`
-- **macOS:** `.dmg` versionado com um `.app` e `AppIcon.icns` gerado do `Logo.jpg`
+- **Windows:** `.zip` com `ohm_player.exe`, `Ohm Player.cmd` e `Logo.jpg`
 
-Ao publicar uma tag `v*`, o workflow em `.github/workflows/release.yml` também anexa os arquivos ao release do GitHub.
+Ao publicar uma tag `v*`, o workflow em `.github/workflows/release.yml` anexa o zip ao release do GitHub.
 
 ## Banco de dados
 
