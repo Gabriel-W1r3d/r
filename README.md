@@ -51,6 +51,16 @@ No Windows, você também pode usar o script incluso:
 
 Ou dar duplo clique em `Ohm Player.cmd`.
 
+## Download e execução em 2 cliques
+
+O projeto agora está preparado para gerar pacotes por sistema operacional via GitHub Actions:
+
+- **Windows:** `.zip` versionado com `ohm_player.exe`, `Ohm Player.cmd` e `Logo.jpg`
+- **Linux:** `AppImage` versionado com ícone gerado a partir do `Logo.jpg`
+- **macOS:** `.dmg` versionado com um `.app` e `AppIcon.icns` gerado do `Logo.jpg`
+
+Ao publicar uma tag `v*`, o workflow em `.github/workflows/release.yml` também anexa os arquivos ao release do GitHub.
+
 ## Banco de dados
 
 O app cria automaticamente o arquivo `ohm_player.db` no diretório do projeto.

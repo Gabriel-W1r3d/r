@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Ohm Player
+Comment=Native, lightweight MP3 player
+Exec=sh -c 'DIR="$(dirname "$1")"; exec "$DIR/run.sh"' sh %k
+Icon=ohm_player
+Terminal=false
+Categories=AudioVideo;Audio;Player;Music;
