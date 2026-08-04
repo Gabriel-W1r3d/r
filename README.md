@@ -49,6 +49,8 @@ No Windows, você também pode usar o script incluso:
 .\run.ps1
 ```
 
+Ou dar duplo clique em `Ohm Player.cmd`.
+
 ## Banco de dados
 
 O app cria automaticamente o arquivo `ohm_player.db` no diretório do projeto.
